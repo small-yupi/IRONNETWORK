@@ -180,10 +180,6 @@ body {
     width: 10vh;
 }
 
-.noticesBotton:hover+.noticesBox {
-    display: block;
-}
-
-.noticesBotton:hover+.noticesBox {
+.noticesBotton:focus+.noticesBox {
     display: block;
 }
