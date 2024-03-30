@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    animation: title 1500ms infinite alternate linear;
+    -webkit-animation: title 1500ms infinite alternate linear;
+    font-size: 75px;
+    background-image: linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-image: -webkit-linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+} @keyframes title
+{
+    0% {
+        background-position:0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@-webkit-keyframes title
+{
+    0% {
+        background-position:0 0;
+    }
+
+    100% {
+        background-position:100% 0;
+    }
+}
+
+.sub-title {
+    animation: title 1500ms infinite alternate linear;
+    -webkit-animation: title 1500ms infinite alternate linear;
+    font-size: 25px;
+    background-image: linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-image: -webkit-linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+} @keyframes title
+{
+    0% {
+        background-position:0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@-webkit-keyframes title
+{
+    0% {
+        background-position:0 0;
+    }
+
+    100% {
+        background-position:100% 0;
+    }
+}
+
+.button-introduction {
+    transition: all 300ms ease;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 9%;
+    height: 6%;
+    background-image: linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-image: -webkit-linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-size:200% 100%;
+    border: none;
+    border-radius: 35px;
+    text-align: center;
+    color: white;
+}
+
+.button-introduction:hover {
+    animation: button-introduction 2s infinite alternate linear;
+    -webkit-animation: button-introduction 2s infinite alternate linear;
+    transform: scale(108%);
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 9%;
+    height: 6%;
+    background-image: linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-image: -webkit-linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-size:200% 100%;
+    border: none;
+    border-radius: 35px;
+    text-align: center;
+    color: white;
+    filter: contrast(115%);
+} @keyframes button-introduction
+{
+    0% {
+        background-position:0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+} @-webkit-keyframes button-introduction
+{
+    0% {
+        background-position:0 0;
+    }
+
+    100% {
+        background-position:200% 0;
+    }
+}
+
+.button-introduction:active {
+    transition: all 50ms ease;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    width: 9%;
+    height: 6%;
+    background-image: linear-gradient(30deg, #00ffa2, #00d0ff);
+    background-image: -webkit-linear-gradient(30deg, #00ffa2, #00d0ff);
+    border: none;
+    border-radius: 35px;
+    text-align: center;
+    color: rgb(241, 241, 241);
+    transform: scale(97%);
+}
