@@ -6,7 +6,7 @@
     <title>Iron Network | 铁锭服</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
+<body id="body">
     <a href="serverIntroduction.html"><button class="button-introduction"><b>服务器介绍</b></button></a>
 
     <div id="titles">
@@ -23,6 +23,25 @@
             </p>
         </div>
     </div>
+    
+    <button id="dark-light_Button" onclick="darkLight()">🌓</button>
+
+    <script>
+        var mode = 2
+        const body = document.getElementById("body")
+        const allNotices = document.getElementById("allNotices")
+        function darkLight() {
+            mode = mode + 1
+            if (mode % 2 == 1) {
+                body.style.cssText = 'transition: all 200ms ease-in-out;background-color: #0d0d0d;filter: contrast(70%);'
+                allNotices.style.csstext = 'transition: all 200ms ease-in-out;background-color: #0d0d0d;box-shadow: 5px 5px 20px rgb(55, 55, 55);'
+            } else {
+                body.style.cssText = 'transition: all 200ms ease-in-out;background-color: ##ffffff;filter: contrast(142.857%);'
+                allNotices.style.csstext = 'transition: all 200ms ease-in-out;background-color: ##ffffff;box-shadow: 5px 5px 20px rgb(55, 55, 55);'
+            }
+
+        }
+    </script> 
 
 </body>
 </html>
