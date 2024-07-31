@@ -7,11 +7,11 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body id="body">
-    <a href="serverIntroduction.html"><button class="button-introduction"><b>服务器介绍</b></button></a>
+    <a href="serverIntroduction.html"><button class="button-introduction"><b>服务器历史</b></button></a>
 
     <div id="titles">
-        <b class="title">铁锭服，你最佳的生存服务器!</b>
-        <p class="sub-title">1.8.x ~ 1.20.4 无正版验证 服务器地址: old.tiemc.icu</p>
+        <b class="title">铁锭服，1.21纯净生存服务器!</b>
+        <p class="sub-title">无正版验证 服务器地址: new.tiemc.icu:37541/194.147.98.9:37541</p>
     </div> 
 
     <div id="allNotices">
@@ -20,24 +20,28 @@
             <b class="noticesTitle">公告栏</b> <br>
             <p class="notices">
                 1. 2024年3月 铁锭服转让给qwe3141592653589 原铁锭服已永久停服
+                2. 2024年7月 新铁锭服开服
             </p>
         </div>
     </div>
     
-    <button id="dark-light_Button" onclick="darkLight()">🌓</button>
+    <button id="dark-light_Button" onclick="darkLight()">🌗</button>
 
     <script>
         var mode = 2
         const body = document.getElementById("body")
         const allNotices = document.getElementById("allNotices")
+        const dark_light_Button = document.getElementById("dark-light_Button")
         function darkLight() {
             mode = mode + 1
             if (mode % 2 == 1) {
                 body.style.cssText = 'transition: all 200ms ease-in-out;background-color: #0d0d0d;filter: contrast(70%);'
-                allNotices.style.csstext = 'transition: all 200ms ease-in-out;background-color: #0d0d0d;box-shadow: 5px 5px 20px rgb(55, 55, 55);'
+                allNotices.style.csstext = 'transition: all 200ms ease-in-out;background-color: #0d0d0d;'
+                dark_light_Button.style.csstext = 'transform: rotate(180deg);'
             } else {
-                body.style.cssText = 'transition: all 200ms ease-in-out;background-color: ##ffffff;filter: contrast(142.857%);'
-                allNotices.style.csstext = 'transition: all 200ms ease-in-out;background-color: ##ffffff;box-shadow: 5px 5px 20px rgb(55, 55, 55);'
+                body.style.cssText = 'transition: all 200ms ease-in-out;background-color: #ffffff;filter: contrast(142.857%);'
+                allNotices.style.csstext = 'transition: all 200ms ease-in-out;background-color: ##ffffff;'
+                dark_light_Button.style.csstext = 'transform: rotate(180deg);'
             }
 
         }
